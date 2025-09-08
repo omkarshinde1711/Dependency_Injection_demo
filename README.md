@@ -1,6 +1,32 @@
-## Dependency Injection Demo
+<img width="1189" height="451" alt="image" src="https://github.com/user-attachments/assets/2d238a3e-fe9c-4fc8-91e7-48e63e18075c" />## Dependency Injection Demo
 
 <img width="1189" height="451" alt="image" src="https://github.com/user-attachments/assets/7d4b948e-712b-40e1-b070-5ac5064c3621" />
+
+```csharp
+namespace Dependency_Injection_demo
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Home home = new Home();  // creating the dependency outside the person class
+            Person person = new Person(home); // Constructor Injection
+            person.TakeRefuge();
+
+
+            person.GetTreatment(new Hospital()); // Method Injection
+
+            person.School = new School();  // Property Injection
+            person.Study();
+
+            person.School = new College();  // Property Injection
+            person.Study(); // changing the dependency at runtime
+
+            Console.ReadLine();
+        }
+    }
+}
+```
 
 This repository contains a simple C\# console application that serves as a practical demonstration of the **Dependency Injection** (DI) design pattern. It's built to help developers, particularly those new to the concept, understand how to decouple components and manage dependencies effectively in a .NET environment.
 
