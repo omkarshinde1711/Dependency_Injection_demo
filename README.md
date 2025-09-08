@@ -1,5 +1,7 @@
 ## Dependency Injection Demo
 
+<img width="1189" height="451" alt="image" src="https://github.com/user-attachments/assets/7d4b948e-712b-40e1-b070-5ac5064c3621" />
+
 This repository contains a simple C\# console application that serves as a practical demonstration of the **Dependency Injection** (DI) design pattern. It's built to help developers, particularly those new to the concept, understand how to decouple components and manage dependencies effectively in a .NET environment.
 
 -----
